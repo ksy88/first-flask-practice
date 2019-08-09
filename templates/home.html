@@ -7,8 +7,14 @@
   <body>
     {% extends "template.html" %}
     {% block content %}
-    <h1> My First Try Using Flask </h1>
-    <p> Flask is Fun </p>
+    <h1 class='first_title'> Welcome to Swimming's first page! </h1>
+    <div class='circles_container'>
+      <div class='circles'>
+        <div class='circle_text'><a href='{{ url_for('chinese') }}'>CHINESE</a></div>
+        <div class='circle_text'><a href='{{ url_for('korean') }}'>KOREAN</a></div>
+        <div class='circle_text'><a href='{{ url_for('arabic') }}'>ARABIC</a></div>
+      </div>
+    </div>
     {% endblock %}
   </body>
 </html>
